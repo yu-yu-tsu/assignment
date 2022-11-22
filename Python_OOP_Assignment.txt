@@ -1,19 +1,45 @@
 ## Python OOP Assignment
 Q1. What is the purpose of Python's OOP?
 ans- 
-
+In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.
 
 Q2. Where does an inheritance search look for an attribute?
+ans-
+The whole point of a namespace tool like the class statement is to support name inheritance. In Python, inheritance happens when an object is qualified, and involves searching an attribute definition tree (one or more namespaces). Every time you use an expression of the form object.
+
 
 Q3. How do you distinguish between a class object and an instance object?
+ans-
+A class is a template for creating objects in a program, whereas the object is an instance of a class. A class is a logical entity, while an object is a physical entity. A class does not allocate memory space; on the other hand, an object allocates memory space
+
 
 Q4. What makes the first argument in a class’s method function special?
+ans- 
+A class is a template for creating objects in a program, whereas the object is an instance of a class.
+A class is a logical entity, while an object is a physical entity.
+A class does not allocate memory space; on the other hand, an object allocates memory space.
+You can declare a class only once, but you can create more than one object using a class.
+Classes can’t be manipulated, while objects can be manipulated.
+Classes don’t have any values, whereas objects have their own
+
 
 Q5. What is the purpose of the __init__ method?
+ans-
+The __init__ method lets the class initialize the object's attributes and serves no other purpose. It is only used within classes
 
 Q6. What is the process for creating a class instance?
+ans-
+To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts
+
 
 Q7. What is the process for creating a class?
+ans-
+In Python, a class can be created by using the keyword class, followed by the class name. The syntax to create a class is given below.
+
+Syntax
+
+class ClassName:    
+    #statement_suite     
 
 Q8. How would you define the superclasses of a class?
 
