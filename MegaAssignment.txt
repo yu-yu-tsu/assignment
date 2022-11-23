@@ -386,6 +386,7 @@ Q95. Write a Python program to sort a list of tuples by second item.
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 ```
+ans-
 
 Q96. Write a python program to print below pattern.
 ```
@@ -414,7 +415,13 @@ Q97. Write a python program to print below pattern.
 *****
 ```
 ans-
+def pattern2(n):
+  n=5;i=0
+  while(i<=n):
+    print(" " * (n - i) +"*" * i)
+    i+=1
 
+pattern2(5)
 
 Q98. Write a python program to print below pattern.
 ```
@@ -424,6 +431,40 @@ Q98. Write a python program to print below pattern.
  * * * * 
 * * * * * 
 ```
+ans-
+# Python 3.x code to demonstrate star pattern
+
+# Function to demonstrate printing pattern triangle
+def triangle(n):
+	
+	# number of spaces
+	k = n - 1
+
+	# outer loop to handle number of rows
+	for i in range(0, n):
+	
+		# inner loop to handle number spaces
+		# values changing acc. to requirement
+		for j in range(0, k):
+			print(end=" ")
+	
+		# decrementing k after each loop
+		k = k - 1
+	
+		# inner loop to handle number of columns
+		# values changing acc. to outer loop
+		for j in range(0, i+1):
+		
+			# printing stars
+			print("* ", end="")
+	
+		# ending line after each row
+		print("\r")
+
+# Driver Code
+n = 5
+triangle(n)
+
 
 Q99. Write a python program to print below pattern.
 ```
@@ -433,6 +474,37 @@ Q99. Write a python program to print below pattern.
 1 2 3 4 
 1 2 3 4 5
 ```
+ans-
+# Python 3.x code to demonstrate star pattern
+
+# Function to demonstrate printing pattern of numbers
+def numpat(n):
+	
+	# initialising starting number
+	num = 1
+
+	# outer loop to handle number of rows
+	for i in range(0, n):
+	
+		# re assigning num
+		num = 1
+	
+		# inner loop to handle number of columns
+			# values changing acc. to outer loop
+		for j in range(0, i+1):
+		
+				# printing number
+			print(num, end=" ")
+		
+			# incrementing number at each column
+			num = num + 1
+	
+		# ending line after each row
+		print("\r")
+
+# Driver code
+n = 5
+numpat(n)
 
 Q100. Write a python program to print below pattern.
 ```
@@ -442,3 +514,36 @@ C C C
 D D D D 
 E E E E E 
 ```
+ans-
+# Python 3.x code to demonstrate star pattern
+
+# Function to demonstrate printing pattern of alphabets
+def alphapat(n):
+	
+	# initializing value corresponding to 'A'
+	# ASCII value
+	num = 65
+
+	# outer loop to handle number of rows
+	# 5 in this case
+	for i in range(0, n):
+	
+		# inner loop to handle number of columns
+		# values changing acc. to outer loop
+		for j in range(0, i+1):
+		
+			# explicitly converting to char
+			ch = chr(num)
+		
+			# printing char value
+			print(ch, end=" ")
+	
+		# incrementing number
+		num = num + 1
+	
+		# ending line after each row
+		print("\r")
+
+# Driver Code
+n = 5
+alphapat(n)
