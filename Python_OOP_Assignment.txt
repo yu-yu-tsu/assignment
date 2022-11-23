@@ -42,20 +42,66 @@ class ClassName:
     #statement_suite     
 
 Q8. How would you define the superclasses of a class?
+ans- The class from which a class inherits is called the parent or superclass. A class which inherits from a superclass is called a subclass, also called heir class or child class. Superclasses are sometimes called ancestors as well.
+
 
 Q9. What is the relationship between classes and modules?
+ans- 
+There are huge differences between classes and modules in Python.
 
+Classes are blueprints that allow you to create instances with attributes and bound functionality. Classes support inheritance, metaclasses, and descriptors.
+
+Modules can't do any of this, modules are essentially singleton instances of an internal module class, and all their globals are attributes on the module instance. You can manipulate those attributes as needed (add, remove and update), but take into account that these still form the global namespace for all code defined in that module.
 Q10. How do you make instances and classes?
+ans-
+example how to make instances and classes
+class Employee:
+   'Common base class for all employees'
+   empCount = 0
+
+   def __init__(self, name, salary):
+      self.name = name
+      self.salary = salary
+      Employee.empCount += 1
+   
+   def displayCount(self):
+     print "Total Employee %d" % Employee.empCount
+
+   def displayEmployee(self):
+      print "Name : ", self.name,  ", Salary: ", self.salary
+
+"This would create first object of Employee class"
+emp1 = Employee("Zara", 2000)
+"This would create second object of Employee class"
+emp2 = Employee("Manni", 5000)
+emp1.displayEmployee()
+emp2.displayEmployee()
+print "Total Employee %d" % Employee.empCount
 
 Q11. Where and how should be class attributes created?
+ans-
+Class attributes are attributes which are owned by the class itself. They will be shared by all the instances of the class. Therefore they have the same value for every instance. We define class attributes outside all the methods, usually they are placed at the top, right below the class header.
 
 Q12. Where and how are instance attributes created?
+ans-
+Unlike class attributes, instance attributes are not shared by objects. Every object has its own copy of the instance attribute (In case of class attributes all object refer to single copy).
+
+To list the attributes of an instance/object, we have two functions:-
+1. vars()– This function displays the attribute of an instance in the form of an dictionary.
+2. dir()– This function displays more attributes than vars function,as it is not limited to instance. It displays the class attributes as well. It also displays the attributes of its ancestor classes.
 
 Q13. What does the term &quot;self&quot; in a Python class mean?
+ans-
+
 
 Q14. How does a Python class handle operator overloading?
+ans-
+Operator Overloading means giving extended meaning beyond their predefined operational meaning. For example operator + is used to add two integers as well as join two strings and merge two lists. It is achievable because ‘+’ operator is overloaded by int class and str class. You might have noticed that the same built-in operator or function shows different behavior for objects of different classes, this is called Operator Overloading.
 
 Q15. When do you consider allowing operator overloading of your classes?
+ans-
+Consider that we have two objects which are a physical representation of a class (user-defined data type) and we have to add two objects with binary ‘+’ operator it throws an error, because compiler don’t know how to add two objects. So we define a method for an operator and that process is called operator overloading. We can overload all existing operators but we can’t create a new operator. To perform operator overloading, Python provides some special function or magic function that is automatically invoked when it is associated with that particular operator. For example, when we use + operator, the magic method __add__ is automatically invoked in which the operation for + operator is defined.
+
 
 Q16. What is the most popular form of operator overloading?
 
@@ -93,7 +139,13 @@ Q31. Explain Inheritance in Python with an example?
 Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+ans-
 
-Q34.Explain the use of the 'nonlocal' keyword in Python.
+
+Q34.Explain the use of the 'nonlocal' keyword in Python
+ans-
+ used to work with variables inside nested functions, where the variable should not belong to the inner function
 
 Q35. What is the global keyword?
+ans-
+allows you to modify the variable outside of the current scope
