@@ -296,38 +296,105 @@ print(type(var))
 ```
 
 Q59. How can we add an element in a dictionary?
+ans-
+We add a new element to the dictionary by using a new key as a subscript and assigning it a value.
 
 Q60. Create a dictionary and access all the values in that dictionary.
+ans-
+Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'}
+print("\nDictionary with the use of Integer Keys: ")
+print(Dict)
+  
+Dict = {'Name': 'Geeks', 1: [1, 2, 3, 4]}
+print("\nDictionary with the use of Mixed Keys: ")
+print(Dict
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+ans-
+people = {1: {'name': 'John', 'age': '27', 'sex': 'Male'},
+          2: {'name': 'Marie', 'age': '22', 'sex': 'Female'}}
 
 Q62. What is the use of get() function?
+ans-
+The get() method returns the value of the item with the specified key.
 
 Q63. What is the use of items() function?
+ans- 
+The items() method returns a view object. The view object contains the key-value pairs of the dictionary, as tuples in a list. 
 
 Q64. What is the use of pop() function?
+ans- The pop() method removes the item at the given index from the list and returns the removed item
 
 Q65. What is the use of popitems() function?
+ans-
+The popitem() method removes the item that was last inserted into the dictionary
 
 Q66. What is the use of keys() function?
+ans-
+The keys() method returns a view object. The view object contains the keys of the dictionary, as a list.
 
 Q67. What is the use of values() function?
+ans-
+The values() method returns a view object. The view object contains the values of the dictionary, as a list. 
 
 Q68. What are loops in Python?
+ans-
+A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied. Such a type of statement is also known as an iterative statement.
 
 Q69. How many type of loop are there in Python?
+ans-
+ In Python, there are two basic structures for defining loops:
+
+while condition: 
+    loop code block 
+for something in iterable: 
+    loop code block 
+but for can also be used when creating a list, dictionary or set with (or by) comprehension
+
+one_list = [x for x in interable] 
+There are other specific functions to work with iterable
+
+An iterable is any object that, within a loop, can deliver one element at a time, until all the elements are exhausted (or the loop is interrupted by a break statement).
+
+Python includes several native iterables but the programmer can create their own by using specific instructions provided by the language.
 
 Q70. What is the difference between for and while loops?
+ans-
+ for loop is used when the number of iterations is known, whereas execution is done in the while loop until the statement in the program is proved wrong
 
 Q71. What is the use of continue statement?
+ans-Continue Statement skips the execution of the program block from after the continue statement
 
 Q72. What is the use of break statement?
+ans-
+The break statement terminates the execution of the nearest enclosing do , for , switch , or while statement in which it appears.
 
 Q73. What is the use of pass statement?
+ans-
+The pass statement is used as a placeholder for future code. When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed. Empty code is not allowed in loops, function definitions, class definitions, or in if statements.
 
 Q74. What is the use of range() function?
+ans-
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
 Q75. How can you loop over a dictionary?
+ans-
+In this example, we are using the values() method to print all the values present in the dictionary.
+# Python3 code to iterate through all values in a dictionary
+
+statesAndCapitals = {
+	'Gujarat': 'Gandhinagar',
+	'Maharashtra': 'Mumbai',
+	'Rajasthan': 'Jaipur',
+	'Bihar': 'Patna'
+}
+
+print('List Of given capitals:\n')
+
+# Iterating over values
+for capital in statesAndCapitals.values():
+	print(capital)
+
 
 
 ### Coding problems
