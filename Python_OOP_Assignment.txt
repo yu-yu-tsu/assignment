@@ -90,8 +90,10 @@ To list the attributes of an instance/object, we have two functions:-
 1. vars()– This function displays the attribute of an instance in the form of an dictionary.
 2. dir()– This function displays more attributes than vars function,as it is not limited to instance. It displays the class attributes as well. It also displays the attributes of its ancestor classes.
 
-Q13. What does the term &quot;self&quot; in a Python class mean?
-ans-
+Q13. What does the term "self" in a Python class mean?
+ans- 
+The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
 
 
 Q14. How does a Python class handle operator overloading?
@@ -104,10 +106,18 @@ Consider that we have two objects which are a physical representation of a class
 
 
 Q16. What is the most popular form of operator overloading?
+ans- 
+A very popular and convenient example is the Addition (+) operator. Just think how the '+' operator operates on two numbers and the same operator operates on two strings. It performs “Addition” on numbers whereas it performs “Concatenation” on strings.
+
 
 Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+ans-
+Both inheritance and polymorphism are fundamental concepts of object oriented programming. These concepts help us to create code that can be extended and easily maintainable.
 
 Q18. Describe three applications for exception processing.
+ans- 
+
+
 
 Q19. What happens if you don&#39;t do something extra to treat an exception?
 
