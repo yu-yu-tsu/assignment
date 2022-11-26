@@ -205,18 +205,51 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 
 ```
 ans-
+a = [12, 75, 150, 180, 145, 525, 50]
+b = []
+for i in a:
+    if i > 150:
+        if i > 500:
+            break
+        continue
+    if i % 5 == 0:
+        b.append(i)
+        
+print(b)
 
 
 
 Q26. What is a string? How can we declare string in Python?
+ans-
+A string is a sequence of characters. A character is simply a symbol. For example, the English language has 26 characters.
+# defining strings in Python
+# all of the following are equivalent
+my_string = 'Hello'
+print(my_string)
+
+my_string = "Hello"
+print(my_string)
+
+my_string = '''Hello'''
+print(my_string)
+
+# triple quotes string can extend multiple lines
+my_string = """Hello, welcome to
+           the world of Python"""
+print(my_string)
 
 Q27. How can we access the string using its index?
+ans-
+You can access the characters in a string by referring to its index number inside square brackets [] .
+
 
 Q28. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
+ans-
+
 
 Q29. Write a code to get the desired output of the following
 ```
@@ -288,12 +321,18 @@ Q55. What is dictionary ibn Python?
 Q56. How is dictionary different from all other data structures.
 
 Q57. How can we delare a dictionary in Python?
+ans-
+example of dictionary
+var = {1:'ritik',
+	2:'kumar'}
 
 Q58. What will the output of the following?
 ```
 var = {}
 print(type(var))
 ```
+ans-
+it will give output: <class 'dict'>
 
 Q59. How can we add an element in a dictionary?
 ans-
