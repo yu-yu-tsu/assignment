@@ -438,14 +438,82 @@ for capital in statesAndCapitals.values():
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
+ans-
+def fact(n):  
+    return 1 if (n==1 or n==0) else n * fact(n - 1);  
+  
+num = 5  
+print("Factorial of",num,"is",)  
+fact(num))  
 
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
+ans-
+def simple_interest(p,t,r):
+    print('The principal is', p)
+    print('The time period is', t)
+    print('The rate of interest is',r)
+     
+    si = (p * t * r)/100
+     
+    print('The Simple Interest is', si)
+    return si
+     
+# Driver code
+simple_interest(8, 6, 8)
 
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+ans-
+def compound_interest(principle, rate, time):
+ 
+    # Calculates compound interest
+    Amount = principle * (pow((1 + rate / 100), time))
+    CI = Amount - principle
+    print("Compound interest is", CI)
+ 
+ 
+# Driver Code
+compound_interest(10000, 10.25, 5)
+
 
 Q79. Write a Python program to check if a number is prime or not.
+ans-
+num =int(input())
+if num > 1:
+    # Iterate from 2 to n / 2
+    for i in range(2, int(num/2)+1):
+        # If num is divisible by any number between
+        # 2 and n / 2, it is not prime
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
 
 Q80. Write a Python program to check Armstrong Number.
+ans-
+# Python program to check if the number is an Armstrong number or not
+
+# take input from the user
+num = int(input("Enter a number: "))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
 
