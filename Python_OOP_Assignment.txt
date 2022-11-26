@@ -159,6 +159,9 @@ ans-
 Users can either pass their values or can pretend the function to use theirs default values which are specified. In this way, the user can call the function by either passing those optional parameters or just passing the required parameters. Without using keyword arguments. By using keyword arguments
 
 Q30. What are Lambda Functions?
+ans-
+Python Lambda Functions are anonymous function means that the function is without a name. As we already know that the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python.
+
 
 Q31. Explain Inheritance in Python with an example?
 ans-
