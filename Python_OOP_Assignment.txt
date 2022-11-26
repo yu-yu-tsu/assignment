@@ -116,12 +116,26 @@ Both inheritance and polymorphism are fundamental concepts of object oriented pr
 
 Q18. Describe three applications for exception processing.
 ans- 
+Exceptions: Exceptions are raised when the program is syntactically correct, but the code resulted in an error. This error does not stop the execution of the program, however, it changes the normal flow of the program.
+
+Try and except statements are used to catch and handle exceptions in Python. Statements that can raise exceptions are kept inside the try clause and the statements that handle the exception are written inside except clause.
+
+The raise statement allows the programmer to force a specific exception to occur. The sole argument in raise indicates the exception to be raised. This must be either an exception instance or an exception class (a class that derives from Exception).
 
 
+Q19. What happens if you don't do something extra to treat an exception?
+ans-
+However, there is a special case that
 
-Q19. What happens if you don&#39;t do something extra to treat an exception?
+We know that this exception may happen
+We don’t care about this exception
+If it happened, just ignore it without doing anything
+If the situation satisfies the above conditions, you don’t have to use try ... except ... to handle the exceptions. Instead, the Python built-in library contextlib provides a function called suppress to handle this more elegantly.
+
 
 Q20. What are your options for recovering from an exception in your script?
+ans-
+
 
 Q21. Describe two methods for triggering exceptions in your script.
 
@@ -141,16 +155,40 @@ Q27. What is the purpose of the with/as argument, and what other statement is i
 Q28. What are *args, **kwargs?
 
 Q29. How can I pass optional or keyword parameters from one function to another?
+ans-
+Users can either pass their values or can pretend the function to use theirs default values which are specified. In this way, the user can call the function by either passing those optional parameters or just passing the required parameters. Without using keyword arguments. By using keyword arguments
 
 Q30. What are Lambda Functions?
 
 Q31. Explain Inheritance in Python with an example?
+ans-
+# A Python program to demonstrate inheritance
+
+class Person(object):
+
+# Constructor
+def __init__(self, name, id):
+	self.name = name
+	self.id = id
+
+# To check if this person is an employee
+def Display(self):
+	print(self.name, self.id)
+
+
+# Driver code
+emp = Person("Satyam", 102) # An Object of Person
+emp.Display()
+
+
 
 Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+ans-
+
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
 ans-
-
+Using isinstance() function, we can test whether an object/variable is an instance of the specified type or class such as int or list. In the case of inheritance, we can checks if the specified class is the parent class of an object
 
 Q34.Explain the use of the 'nonlocal' keyword in Python
 ans-
