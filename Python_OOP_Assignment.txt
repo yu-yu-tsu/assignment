@@ -135,22 +135,104 @@ If the situation satisfies the above conditions, you don’t have to use try ...
 
 Q20. What are your options for recovering from an exception in your script?
 ans-
+there are two options
+1. exception handling
+2. Assertions
 
 
 Q21. Describe two methods for triggering exceptions in your script.
+ans-
+n the case of Python application development, a python program terminates as soon as it encounters an unhandled error. So, to establish the difference between errors and exceptions, there are two types of errors:
+
+Syntax errors
+Logical errors (Exceptions)
+First, let’s examine the syntax errors. Python syntax errors are caused by not following the proper structure (syntax) of the language. It is also known as a parsing error.
+
+Here’s an example:
+
+>>> ages = {
+
+    ‘jj’: 2,
+
+    ‘yoyo’: 4
+
+}
+
+print(f’JJ is {ages[“jj”]} years old.’)
+
+The output:
+
+JJ is 2 years old.
+
+This is a simple code with no syntax error. Then we will add another variable tomtom:
+
+>>> ages = {
+
+    ‘jj’: 2,
+
+    ‘yoyo’: 4
+
+    ‘tomtom’: 6
+
+}
+
+print(f’JJ is {ages[“jj”]} years old.’)
+
+Upon inspection, you can see an invalid syntax on the second entry, yoyo, inside the array with a missing comma. Try to run this code, and you will get a traceback:
+
+File “<pyshell>”, line 1
+
+    >>> ages = {
+
+     ^
+
+SyntaxError: invalid syntax
 
 Q22. Identify two methods for specifying actions to be executed at termination time, regardless of
 whether or not an exception exists.
+ans- 
+Exception handling is managed by the following 5 keywords:
+
+try
+catch
+finally
+throw
+
 
 Q23. What is the purpose of the try statement?
+ans-
+Try and Except statement is used to handle these errors within our code in Python. The try block is used to check some code for errors i.e the code inside the try block will execute when there is no error in the program. Whereas the code inside the except block will execute whenever the program encounters some error in the preceding try block.
+ 
+
+Syntax: 
+
+try:
+    # Some Code
+except:
+    # Executed if error in the
+    # try block
 
 Q24. What are the two most popular try statement variations?
+ans-
+The Different Try/Except Variations. So far we've used a try / except and even a try / except / except , but this is only two-thirds of the story. There are two other optional segments to a try block: else and finally . Both of these optional blocks will come after the try and the except
 
 Q25. What is the purpose of the raise statement?
+ans-
+The raise keyword is used to raise an exception. You can define what kind of error to raise, and the text to print to the user.
 
 Q26. What does the assert statement do, and what other statement is it like?
+ans-
+x = "hello"
+
+#if condition returns True, then nothing happens:
+assert x == "hello"
+
+#if condition returns False, AssertionError is raised:
+assert x == "goodbye"
 
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
+ans-
+The with statement is a replacement for commonly used try/finally error-handling statements. A common example of using the with statement is opening a file. 
 
 Q28. What are *args, **kwargs?
 
