@@ -269,10 +269,21 @@ Q33. How can you print the below string?
 ```
 
 Q34. What is a list in Python?
+ans-
+List. Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage
 
 Q35. How can you create a list in Python?
+ans-
+to create list 
+li = [12,23,34,54,55]
 
 Q36. How can we access the elements in a list?
+ans-
+list1 = ['physics', 'chemistry', 1997, 2000];
+list2 = [1, 2, 3, 4, 5, 6, 7 ];
+print "list1[0]: ", list1[0]
+print "list2[1:5]: ", list2[1:5]
+
 
 Q37. Write a code to access the word "iNeuron" from the given list.
 ```
@@ -280,15 +291,46 @@ lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 ``` 
 
 Q38. Take a list as an input from the user and find the length of the list.
+ans-
+
+# creating an empty list
+lst = []
+  
+# number of elements as input
+n = int(input("Enter number of elements : "))
+  
+# iterating till the range
+for i in range(0, n):
+    ele = int(input())
+  
+    lst.append(ele) # adding the element
+      
+print(lst)
 
 Q39. Add the word "Big" in the 3rd index of the given list.
 ```
 lst = ["Welcome", "to", "Data", "course"]
 ```
+ans-
+lst = ["Welcome", "to", "Data", "course"]
+lst.insert(3,'Big')
+print(lst)
 
 Q40. What is a tuple? How is it different from list?
+ans-
+A python tuple has the following features - 
+
+Tuples are used to store heterogeneous and homogeneous data.
+Tuples are immutable in nature.
+Tuples are ordered
+An index is used to traverse a tuple.
+Tuples are similar to lists. It also preserves the data sequence.
+As tuples are immutable, they are faster than the list because they are static.
+
 
 Q41. How can you create a tuple in Python?
+ans-
+
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
 
