@@ -272,7 +272,7 @@ emp.Display()
 
 Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
 ans-
-
+In this inheritance, more than one derived class is created from a single base class and further child classes act as parent classes for more than one child class.
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
 ans-
