@@ -601,13 +601,65 @@ print(swapPositions(List, pos1-1, pos2-1))
 
 Q84. Write a Python program to find N largest element from a list.
 ans-
-
+def Nmaxelements(list1, N):
+    final_list = []
+ 
+    for i in range(0, N):
+        max1 = 0
+         
+        for j in range(len(list1)):    
+            if list1[j] > max1:
+                max1 = list1[j];
+                 
+        list1.remove(max1);
+        final_list.append(max1)
+         
+    print(final_list)
+ 
+# Driver code
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 2
+ 
+# Calling the function
+Nmaxelements(list1, N)
 
 Q85. Write a Python program to find cumulative sum of a list.
+ans-
+
+# Python code to get the Cumulative sum of a list
+def Cumulative(lists):
+    cu_list = []
+    length = len(lists)
+    cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)]
+    return cu_list[1:]
+ 
+# Driver Code
+lists = [10, 20, 30, 40, 50]
+print (Cumulative(lists))
+
 
 Q86. Write a Python program to check if a string is palindrome or not.
+ans-
+# function which return reverse of a string
+
+def isPalindrome(s):
+	return s == s[::-1]
+
+
+# Driver code
+s = "malayalam"
+ans = isPalindrome(s)
+
+if ans:
+	print("Yes")
+else:
+	print("No")
+
+
 
 Q87. Write a Python program to remove i'th element from a string.
+ans-
+
 
 Q88. Write a Python program to check if a substring is present in a given string.
 
