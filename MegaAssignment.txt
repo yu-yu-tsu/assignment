@@ -361,6 +361,8 @@ Q54. What is intersection() in sets? Explain via code.
 Q55. What is dictionary ibn Python?
 
 Q56. How is dictionary different from all other data structures.
+ans- 
+ A dictionary has a set of keys and each key has a single associated value. When presented with a key the dictionary will • A dictionary has a set of keys and each key has a single associated value.
 
 Q57. How can we delare a dictionary in Python?
 ans-
