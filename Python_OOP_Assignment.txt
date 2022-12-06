@@ -21,10 +21,20 @@ ans-
 The __init__ method lets the class initialize the object's attributes and serves no other purpose. It is only used within classes
 
 Q6. What is the process for creating a class instance?
+ans-
+To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts.
 
 Q7. What is the process for creating a class?
+ans-
+Create a Class. To create a class, use the keyword class : ...
+Create Object. Now we can use the class named MyClass to create objects: ...
+The self Parameter. ...
+Modify Object Properties. ...
+
 
 Q8. How would you define the superclasses of a class?
+ans-
+A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics of a superclass.
 
 Q9. What is the relationship between classes and modules?
 
