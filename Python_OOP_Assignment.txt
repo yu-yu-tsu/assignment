@@ -90,3 +90,4 @@ Q33. Which methods/functions do we use to determine the type of instance and inh
 Q34.Explain the use of the 'nonlocal' keyword in Python.
 
 Q35. What is the global keyword?
+ans-
