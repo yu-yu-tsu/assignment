@@ -1,10 +1,36 @@
 # PandasAssignment
 
 Q1. How do you load a CSV file into a Pandas DataFrame?
+ans-
+by using read.csv() function we load a csv file
 
 Q2. How do you check the data type of a column in a Pandas DataFrame?
+ans- using dtype attribute 
 
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
+ans- here is a example 
+Selecting all the rows from the given dataframe in which ‘Percentage’ is greater than 80 using basic method.
+
+# importing pandas
+import pandas as pd
+  
+record = {
+  
+ 'Name': ['Ankit', 'Amit', 'Aishwarya', 'Priyanka', 'Priya', 'Shaurya' ],
+ 'Age': [21, 19, 20, 18, 17, 21],
+ 'Stream': ['Math', 'Commerce', 'Science', 'Math', 'Math', 'Science'],
+ 'Percentage': [88, 92, 95, 70, 65, 78] }
+  
+# create a dataframe
+dataframe = pd.DataFrame(record, columns = ['Name', 'Age', 'Stream', 'Percentage'])
+  
+print("Given Dataframe :\n", dataframe) 
+  
+# selecting rows based on condition
+rslt_df = dataframe[dataframe['Percentage'] > 80]
+  
+print('\nResult dataframe :\n', rslt_df)
+
 
 Q4. How do you rename columns in a Pandas DataFrame?
 
