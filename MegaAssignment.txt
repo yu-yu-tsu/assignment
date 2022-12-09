@@ -249,24 +249,35 @@ string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
 ans-
-
+print(string[9:])
 
 Q29. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
 desired_output = "norueNi"
 ```
+ans-
+str1 = string[9:]
+print(str1[::-1])
 
 Q30. Resverse the string given in the above question.
+ans-
+print(string[::-1])
 
 Q31. How can you delete entire string at once?
+ans-
+by using del keyword.
 
 Q32. What is escape sequence?
+ans-
+An escape sequence is a sequence of characters that, when used inside a character or string, does not represent itself but is converted into another character or series of characters that may be difficult or impossible to express directly, like newline (\n), tab (\t), and so on.
 
 Q33. How can you print the below string?
 ```
 'iNeuron's Big Data Course'
 ```
+ans-
+print("'iNeuron's Big Data Course'")
 
 Q34. What is a list in Python?
 ans-
