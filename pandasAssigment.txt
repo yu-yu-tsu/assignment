@@ -33,12 +33,20 @@ print('\nResult dataframe :\n', rslt_df)
 
 
 Q4. How do you rename columns in a Pandas DataFrame?
+ans-
+using the rename() function
 
 Q5. How do you drop columns in a Pandas DataFrame?
+ans-
+ drop() method is used to remove the columns from the DataFrame
 
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
+ans-
+You can get unique values in column (multiple columns) from pandas DataFrame using unique() or Series. unique() functions. unique() from Series is used to get unique values from a single column and the other one is used to get from multiple columns.
 
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
+ans-
+using df.isna().sum().sum()
 
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
 
