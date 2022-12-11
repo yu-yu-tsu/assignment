@@ -53,8 +53,12 @@ ans-
 The fillna() function iterates through your dataset and fills all empty rows with a specified value. This could be the mean, median, modal, or any other value
 
 Q9. How do you concatenate two Pandas DataFrames?
+ans-
+To concatenate an arbitrary number of pandas objects ( DataFrame or Series ), use concat.
 
 Q10. How do you merge two Pandas DataFrames on a specific column?
+ans-
+
 
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
 
