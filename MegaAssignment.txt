@@ -783,6 +783,12 @@ Q94. Write a Python program to get all combinations of 2 tuples.
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 ```
+ans-
+res =  [(a, b) for a in test_tuple1 for b in test_tuple2]
+res = res +  [(a, b) for a in test_tuple2 for b in test_tuple1]
+  
+# printing result 
+print("The filtered tuple : " + str(res))
 
 Q95. Write a Python program to sort a list of tuples by second item.
 ```
@@ -790,6 +796,24 @@ Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)]
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 ```
 ans-
+def Sort_Tuple(tup):
+     
+    # getting length of list of tuples
+    lst = len(tup)
+    for i in range(0, lst):
+         
+        for j in range(0, lst-i-1):
+            if (tup[j][1] > tup[j + 1][1]):
+                temp = tup[j]
+                tup[j]= tup[j + 1]
+                tup[j + 1]= temp
+    return tup
+ 
+# Driver Code
+tup =[('for', 24), ('is', 10), ('Geeks', 28),
+      ('Geeksforgeeks', 5), ('portal', 20), ('a', 15)]
+       
+print(Sort_Tuple(tup))
 
 Q96. Write a python program to print below pattern.
 ```
