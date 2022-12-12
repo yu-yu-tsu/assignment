@@ -58,6 +58,9 @@ To concatenate an arbitrary number of pandas objects ( DataFrame or Series ), us
 
 Q10. How do you merge two Pandas DataFrames on a specific column?
 ans-
+You can join pandas Dataframes in much the same way as you join tables in SQL.
+The concat() function can be used to concatenate two Dataframes by adding the rows of one to the other.
+concat() can also combine Dataframes by columns but the merge() function is the preferred way.
 
 
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
