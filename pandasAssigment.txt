@@ -64,6 +64,18 @@ concat() can also combine Dataframes by columns but the merge() function is the 
 
 
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
+ans-
+By “group by” we are referring to a process involving one or more of the following steps:
+
+Splitting the data into groups based on some criteria.
+
+Applying a function to each group independently.
+
+Combining the results into a data structure.
+
+Out of these, the split step is the most straightforward. In fact, in many situations we may wish to split the data set into groups and do something with those groups. In the apply step, we might wish to do one of the following:
+
+Aggregation: compute a summary statistic (or statistics) for each group.
 
 Q12. How do you pivot a Pandas DataFrame?
 
