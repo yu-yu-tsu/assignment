@@ -78,10 +78,16 @@ Out of these, the split step is the most straightforward. In fact, in many situa
 Aggregation: compute a summary statistic (or statistics) for each group.
 
 Q12. How do you pivot a Pandas DataFrame?
+ans- using
+DataFrame.pivot(self, index=None, columns=None, values=None)
 
 Q13. How do you change the data type of a column in a Pandas DataFrame?
+ans-
+use pandas. to_numeric() 
 
 Q14. How do you sort a Pandas DataFrame by a specific column?
+ans-
+use . sort_values() to sort the Panda DataFrames by a specific columns.
 
 Q15. How do you create a copy of a Pandas DataFrame?
 
