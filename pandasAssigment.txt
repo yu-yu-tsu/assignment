@@ -90,8 +90,12 @@ ans-
 use . sort_values() to sort the Panda DataFrames by a specific columns.
 
 Q15. How do you create a copy of a Pandas DataFrame?
+ans-
+by using copy() function 
 
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
+ans-
+by using loc function we can filter rows
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
 
