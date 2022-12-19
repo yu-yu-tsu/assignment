@@ -98,6 +98,10 @@ ans-
 by using loc function we can filter rows
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
+ans-
+example if we want to take mean of specific column
+then df.['column'].mean()
+
 
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
 
