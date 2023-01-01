@@ -104,6 +104,9 @@ then df.['column'].mean()
 
 
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
+ans-
+using the function . std()
+
 
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
 
