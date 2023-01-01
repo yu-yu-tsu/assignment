@@ -114,6 +114,8 @@ By using corr() function
 
 
 Q20. How do you select specific columns in a DataFrame using their labels?
+ans-
+ just put the string name of the column in brackets. Returns a pandas series. Passing a list in the brackets lets you select multiple columns at the same time.
 
 Q21. How do you select specific rows in a DataFrame using their indexes?
 
