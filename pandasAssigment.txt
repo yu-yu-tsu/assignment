@@ -126,6 +126,11 @@ ans-
 To sort the DataFrame based on the values in a single column, you'll use . sort_values() .
 
 Q23. How do you create a new column in a DataFrame based on the values of another column?
+ans-
+apply() method
+numpy.select() method (for a vectorised approach)
+loc property
+
 
 Q24. How do you remove duplicates from a DataFrame?
 
