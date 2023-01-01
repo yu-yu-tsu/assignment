@@ -131,7 +131,8 @@ apply() method
 numpy.select() method (for a vectorised approach)
 loc property
 
-
 Q24. How do you remove duplicates from a DataFrame?
+ans-
+The drop_duplicates() method removes duplicate rows
 
 Q25. What is the difference between .loc and .iloc in Pandas?
