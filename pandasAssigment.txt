@@ -109,6 +109,9 @@ using the function . std()
 
 
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
+ans-
+By using corr() function
+
 
 Q20. How do you select specific columns in a DataFrame using their labels?
 
